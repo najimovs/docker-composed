@@ -1,6 +1,9 @@
 import express from "express"
+import cors from "cors"
 
 const app = express()
+
+app.use( cors() )
 
 app.get( "/health", ( _ ,res ) => res.send( { message: "OK" } ) )
 app.get( "/some-number", ( _ ,res ) => res.send( [ 1 ] ) )
