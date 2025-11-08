@@ -4,10 +4,10 @@ import { Pool } from "pg"
 
 const pool = new Pool( {
 	user: "postgres",
-	password: "math",
-	host: "localhost",
+	password: "postgres",
+	host: "db",
 	port: 5432,
-	database: "postgres",
+	database: "mydb",
 } )
 
 const app = express()

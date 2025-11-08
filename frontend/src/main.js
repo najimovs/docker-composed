@@ -4,7 +4,7 @@ load()
 
 async function load() {
 
-	const json = await ( await fetch( "http://localhost:3000/some-number" ) ).json()
+	const response = await fetch( "/api/some-number" )
 
-	console.log( json )
+	console.log( await response.json() )
 }
